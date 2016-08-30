@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Solar_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-m8-cVf"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-ct-JLn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Tb-3Q-CDj"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-ie-PcN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jQj-hV-BEf"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Solar System" id="gW5-ic-FHa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mUl-m8-cVf" secondAttribute="trailing" id="AZb-O7-id9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mUl-m8-cVf" secondAttribute="bottom" id="GGQ-if-qez"/>
+                            <constraint firstItem="ppb-ct-JLn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nof-qF-CyL"/>
+                            <constraint firstItem="ppb-ct-JLn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QKR-gM-rnv"/>
+                            <constraint firstItem="mUl-m8-cVf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VYV-nH-C9B"/>
+                            <constraint firstItem="TeN-ie-PcN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a1G-Vl-Abr"/>
+                            <constraint firstItem="mUl-m8-cVf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bsp-dc-WqD"/>
+                            <constraint firstItem="TeN-ie-PcN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f8l-an-eX3"/>
+                            <constraint firstAttribute="trailing" secondItem="TeN-ie-PcN" secondAttribute="trailing" id="iyX-dI-ydB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ppb-ct-JLn" secondAttribute="bottom" id="xL4-u0-179"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="ppb-ct-JLn" id="Hig-1o-1Jt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="space" width="1920" height="1080"/>
+    </resources>
+</document>

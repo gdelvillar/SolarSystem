@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SunVC-->
+        <scene sceneID="vtk-Rz-nGN">
+            <objects>
+                <viewController storyboardIdentifier="sunVC" id="IFK-jJ-fUu" customClass="SunVC" customModule="Solar_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HhX-Yo-Zf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="eqA-c8-ep6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tQg-wZ-rYN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bab-D8-Y5C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="cGW-Zt-4Al"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-xM-TS3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ts5-Im-f8B"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="KVy-O3-cJ6"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL7-XA-bqE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HrA-KG-bje"/>
+                                    <constraint firstAttribute="width" constant="110" id="oF3-Da-qTw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Solar System">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="popViewButton:" destination="IFK-jJ-fUu" eventType="touchUpInside" id="meZ-xC-Ihm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-fO-nGt">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TPm-xM-TS3" firstAttribute="leading" secondItem="tQg-wZ-rYN" secondAttribute="leading" id="4nd-fQ-SlM"/>
+                            <constraint firstAttribute="trailing" secondItem="TPm-xM-TS3" secondAttribute="trailing" id="6mr-Y9-ExQ"/>
+                            <constraint firstItem="KL7-XA-bqE" firstAttribute="top" secondItem="HhX-Yo-Zf8" secondAttribute="bottom" constant="3" id="EFR-bp-SaC"/>
+                            <constraint firstItem="cKg-fO-nGt" firstAttribute="leading" secondItem="tQg-wZ-rYN" secondAttribute="leadingMargin" id="F0L-0c-rSK"/>
+                            <constraint firstItem="bab-D8-Y5C" firstAttribute="top" secondItem="tQg-wZ-rYN" secondAttribute="top" constant="25" id="JMQ-Ko-FRU"/>
+                            <constraint firstItem="cKg-fO-nGt" firstAttribute="trailing" secondItem="tQg-wZ-rYN" secondAttribute="trailingMargin" id="N6I-jy-jlB"/>
+                            <constraint firstItem="cKg-fO-nGt" firstAttribute="top" secondItem="bab-D8-Y5C" secondAttribute="bottom" constant="15" id="Ox4-lq-GMU"/>
+                            <constraint firstItem="TPm-xM-TS3" firstAttribute="top" secondItem="tQg-wZ-rYN" secondAttribute="top" id="fTe-iF-loj"/>
+                            <constraint firstAttribute="trailing" secondItem="bab-D8-Y5C" secondAttribute="trailing" id="iCg-uV-QQD"/>
+                            <constraint firstItem="eqA-c8-ep6" firstAttribute="top" secondItem="cKg-fO-nGt" secondAttribute="bottom" constant="20" id="rlJ-N6-bOI"/>
+                            <constraint firstItem="KL7-XA-bqE" firstAttribute="leading" secondItem="tQg-wZ-rYN" secondAttribute="leadingMargin" id="sYV-5u-Bu5"/>
+                            <constraint firstItem="bab-D8-Y5C" firstAttribute="leading" secondItem="tQg-wZ-rYN" secondAttribute="leading" id="weP-33-6Vd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="KL7-XA-bqE" id="jAX-4w-yc4"/>
+                        <outlet property="navBar" destination="TPm-xM-TS3" id="ceQ-ao-zqC"/>
+                        <outlet property="planetImg" destination="bab-D8-Y5C" id="VvQ-jg-rbu"/>
+                        <outlet property="textView" destination="cKg-fO-nGt" id="76P-Qd-UDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNX-sm-F1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136.80000000000001" y="-171.36431784107947"/>
+        </scene>
+    </scenes>
+</document>
